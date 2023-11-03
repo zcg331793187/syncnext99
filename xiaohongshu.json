@@ -1,0 +1,30 @@
+{
+    "name": "小红书",
+    "description": "小红书",
+    "host": "https://www.xiaohongshu.com",
+    "files": ["util.js","txml.js","https://gongfuxiong-test.oss-cn-shenzhen.aliyuncs.com/syncnext/xiaohongshu.js"],
+    "pages": [
+      {
+        "key": "index",
+        "title": "熱門影片",
+        "url": "genre=裏番&sort=他們在看&page=${pageNumber}",
+        "javascript": "buildMedias1"
+      },
+      {
+        "key": "1",
+        "title": "最新上傳",
+        "url": "genre=最新上傳&page=${pageNumber}",
+        "javascript": "buildMedias"
+      }
+    ],
+    "episodes": {
+      "javascript": "Episodes"
+    },
+    "player": {
+      "javascript": "Player"
+    },
+    "search": {
+        "url": "query=${keyword}&page=1",
+        "javascript": "buildMedias"
+    }
+  }
