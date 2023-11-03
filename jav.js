@@ -14,7 +14,7 @@ function buildMedias(inputURL) {
         // const _body = res.body.replace(/[\n\t]+/g, '').replace(/>[\s]+</g, '><');
         const content = tXml.getElementsByClassName(res.body, "img-box cover-md a");
         console.log(content)
-        print(res.body);
+        // print(res.body);
 
         /*
         if (inputURL.indexOf("裏番") == -1) {
