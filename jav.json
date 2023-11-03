@@ -1,0 +1,60 @@
+{
+  "name": "jav",
+  "description": "jav",
+  "host": "https://jable.tv",
+  "files": ["util.js","txml.js","jav.js"],
+  "pages": [
+    {
+      "key": "index",
+      "title": "新作",
+      "url": "new-release/${pageNumber}/",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "1",
+      "title": "最新上傳",
+      "url": "genre=最新上傳&page=${pageNumber}",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "2",
+      "title": "他們在看",
+      "url": "genre=全部&sort=他們在看&page=${pageNumber}",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "3",
+      "title": "Cosplay",
+      "url": "genre=Cosplay&page=${pageNumber}",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "4",
+      "title": "番劇",
+      "url": "genre=裏番&page=${pageNumber}",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "5",
+      "title": "3D動畫",
+      "url": "genre=3D動畫&page=${pageNumber}",
+      "javascript": "buildMedias"
+    },
+    {
+      "key": "6",
+      "title": "同人作品",
+      "url": "genre=同人作品&page=${pageNumber}",
+      "javascript": "buildMedias"
+    }
+  ],
+  "episodes": {
+    "javascript": "Episodes"
+  },
+  "player": {
+    "javascript": "Player"
+  },
+  "search": {
+    "url": "query=${keyword}&page=1",
+    "javascript": "buildMedias"
+  }
+}
